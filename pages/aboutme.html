@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ABOUT ME | Sunhuyn</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <div id="top-bar"></div>
+    <div id="top-color-splash"></div>
+    <div class="navigation">
+        <ul id="navbar">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="aboutme.html">ABOUT ME</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="" class="last-link">IMAGES</a></li>
+        </ul>
+        <ul id="logo-container">
+            <li id="logo-icon2"><a href="#"><img src="../img/instagram.png" /></a></li>
+            <li id="logo-icon1"><a href="#"><img src="../img/youtube.png" /></a></li>
+            <li id="logo-icon"><a href="#"><img src="../img/facebook.png" /></a></li>
+        </ul>
+    </div>
+
+
+
+    <!--<div class="normal-wrapper">
+        <img src="Sunhyun.png" style="width: 100%" />
+    </div>-->
+
+    <div class="normal-wrapper">
+        <h1 id="about-me"><i>a b o u t m e</i></h1>
+    </div>
+
+
+    <div class="normal-wrapper">
+        <div class="one-third">
+            <img id="avatar" src="../img/sunhyun-avatar.png" />
+        </div>
+        <div class="two-third">
+            <h5 id="sunhyun">Sunhyun</h5>
+            <p>Xin chào!</p>
+            <h2 id="sunhyuntitle">Sunhuyn's Blog - là kênh thông tin về kiến thức, kỹ năng và phong cách sống dành cho người trẻ!</h2>
+            <p>
+                Các bạn có thể tìm đọc ở đây những bài viết về: Sổ tay lên kế hoạch [Bullet journal]; Lối sống tối giản [Minimalism]; Cách để có một cuộc sống tốt hơn [Do it better]; Những bài học đáng nhớ, những cuốn sách hay, tư vấn tâm lý [Highlight]... Và những điều tích cực thường ngày trong cuộc sống của một cô gái trẻ.
+            </p>
+            <p>Cô gái đó là Sunhuyn, mọi người thường gọi mình là Sun. Nếu mọi người quan tâm thì hãy tiếp tục theo dõi và đăng kí email để nhận thông báo mỗi khi có bài viết mới nhé.</p>
+            <p>Hello! I'm Sunhuyn, a lifestyle blogger from Vietnam. Sunhuyn is a blog about personal growth + lifestyle design, where I share knowledge and inspiration about creating your dream life.</p>
+            <p>✨ Don't be the same, be better✨</p>
+            <!--<img id="f-image-1" class="featured-image" src="Image_1.jpg" />
+            <img id="f-image-2" class="featured-image hidden" src="Image_2.jpg" />
+            <img id="f-image-3" class="featured-image hidden" src="Image_3.jpg" />-->
+        </div>
+    </div>
+
+    <div id="quote-area">
+        <div class="normal-wrapper">
+            <h3>“don't be the same! be better!”</h3>
+            <h4>Sunhyun</h4>
+        </div>
+    </div>
+    <div class="normal-wrapper">
+        <h1 id="contact"><i>Contact</i></h1>
+    </div>
+    <div class="normal-wrapper container">
+        <form  method="get">
+            <input type="text" id="Name" name="Name" placeholder="Your name..">
+
+            <input type="email" id="Email" name="Email" placeholder="Your email..">
+
+            <textarea id="message" name="message" placeholder="Message.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
+    <!--<div class="normal-wrapper">
+        <div class="icon-outer">
+            <div class="icon-circle">
+                <i class="fa fa-youtube"></i>
+            </div>
+            <h5>YouTube</h5>
+            <p>Checkout our YouTube channel for more tech reviews, tutorials and giveaways!</p>
+        </div>
+
+        <div class="icon-outer">
+            <div class="icon-circle">
+                <i class="fa fa-camera-retro"></i>
+            </div>
+            <h5>Reviews</h5>
+            <p>If you’re planning to buy a new gadget, check here first. We’ll give you in-depth reviews of the latest devices.</p>
+        </div>
+
+        <div class="icon-outer">
+            <div class="icon-circle">
+                <i class="fa fa-dollar"></i>
+            </div>
+            <h5>Buying Guides</h5>
+            <p>At Buying Guides we strive to provide readers with the tools to get the best stuff for the lowest amount of money.</p>
+        </div>
+    </div>-->
+
+    <div id="footer"></div>
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HOME | Sunhuyn</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript">
+        function clChange1(cl) {
+            document.getElementById("title1").style.color = cl;
+        }
+        function clChange2(cl) {
+            document.getElementById("title2").style.color = cl;
+        }
+        function clChange3(cl) {
+            document.getElementById("title3").style.color = cl;
+        }
+        function clChange4(cl) {
+            document.getElementById("title4").style.color = cl;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <div id="top-bar"></div>
+    <div id="top-color-splash"></div>
+
+
+    <div class="navigation">
+        <ul id="navbar">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="pages/aboutme.html">ABOUT ME</a></li>
+            <li><a href="pages/blog.html">BLOG</a></li>
+            <li><a href="" class="last-link">IMAGES</a></li>
+        </ul>
+        <ul id="logo-container">
+            <li id="logo-icon2"><a href="#"><img src="img/instagram.png" /></a></li>
+            <li id="logo-icon1"><a href="#"><img src="img/youtube.png" /></a></li>
+            <li id="logo-icon"><a href="#"><img src="img/facebook.png" /></a></li>
+        </ul>
+    </div>
+
+    <div class="banner">
+        <img src="img/sunhuyn-sign.jpg" style="width: 100%" />
+    </div>
+
+    <div class="category-blog">
+        <ul id="list-inline-blog">
+            <li><div class="container"><img src="img/bullet-journal.png" /><div id="text-block-first"><a href="pages/blog.html">BULLET JOURNAL</a></div></div></li>
+            <li><div class="container"><img src="img/do-it-better.png" /><div id="text-block"><a href="pages/blog.html">DO IT BETTER</a></div></div></li>
+            <li><div class="container"><img src="img/highlight.png" /><div id="text-block"><a href="pages/blog.html">HIGHLIGHT</a></div></div></li>
+        </ul>
+    </div>
+
+    <ul id="post">
+        <li>
+            <div class="post" id="post2" onmouseover="clChange1('#dac292')" onmouseout="clChange1('black')">
+                <div class="column-one">
+                    <img id="imagepost" src="img/1.png" />
+                </div>
+                <div class="column-two">
+                    <div class="info-author">
+                        <div class="postone">
+                            <img src="img/sunhyun-avatar.png" />
+                        </div>
+                        <div class="posttwo">
+                            <p id="authorname"><a href="#">Trương Khánh</a></p>
+                            <p>Dec 2, 2019  </p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h2 class="no-margin-top"><a id="title1" href="pages/detail.html">LÂU KHÔNG VIẾT CÁI GÌ ĐÓ "TÌNH" NHỈ?</a></h2>
+                        <br />
+                        <p id="description">
+                            "Sến" nó ăn sâu vào máu của tôi. Cái tâm hồn đôi lúc già cỗi trong cơ thể bé bỏng này đang tồn tại mãnh liệt. Có lẽ vì vậy mà những bài hát xập xình ...
+                        </p>
+                        <br />
+                        <ul id="footer-post">
+                            <li>100 Views</li>
+                            <li>6 comments</li>
+                            <li id="last-footer-post">190 <img src="img/heart-icon.png" /></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="post" id="post2" onmouseover="clChange2('#dac292')" onmouseout="clChange2('black')">
+                <div class="column-one">
+                    <img id="imagepost" src="img/2.png" />
+                </div>
+                <div class="column-two">
+                    <div class="info-author">
+                        <div class="postone">
+                            <img src="img/sunhyun-avatar.png" />
+                        </div>
+                        <div class="posttwo">
+                            <p id="authorname"><a href="#">Trương Khánh</a></p>
+                            <p>Dec 2, 2019  </p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h2 class="no-margin-top"><a id="title2" href="pages/detail2.html">ĐỌC 7 CUỐN SÁCH TRONG 7 NGÀY</a></h2>
+                        <br />
+                        <p id="description">
+                            “So many books, so little time” Cũng không hẳn là dễ để tìm ra thể loại sách mà mình thích. Nhưng nếu không bao giờ đọc, đương nhiên chún...
+                        </p>
+                        <br />
+                        <ul id="footer-post">
+                            <li>100 Views</li>
+                            <li>6 comments</li>
+                            <li id="last-footer-post">190 <img src="img/heart-icon.png" /></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="post" id="post3" onmouseover="clChange3('#dac292')" onmouseout="clChange3('black')">
+                <div class="column-one">
+                    <img id="imagepost" src="img/3.png" />
+                </div>
+                <div class="column-two">
+                    <div class="info-author">
+                        <div class="postone">
+                            <img src="img/sunhyun-avatar.png" />
+                        </div>
+                        <div class="posttwo">
+                            <p id="authorname"><a href="#">Trương Khánh</a></p>
+                            <p>Dec 2, 2019  </p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h2 class="no-margin-top"><a id="title3" href="pages/detail3.html">CHUYỆN ĐỌC SÁCH CỦA CÁC BẠN TRẺ HIỆN NAY...</a></h2>
+                        <br />
+                        <p id="description">
+                            “Chị chị Em không tìm thấy đam mê, chị cho em một cuốn sách để em tìm ra đam mê đi ạ.” “Tiền bối, em ế 22 năm rồi, chị cho em xin cuốn sá...
+                        </p>
+                        <br />
+                        <ul id="footer-post">
+                            <li>100 Views</li>
+                            <li>6 comments</li>
+                            <li id="last-footer-post">190 <img src="img/heart-icon.png" /></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="post" id="post4" onmouseover="clChange4('#dac292')" onmouseout="clChange4('black')">
+                <div class="column-one">
+                    <img id="imagepost" src="img/4.1.png" />
+                </div>
+                <div class="column-two">
+                    <div class="info-author">
+                        <div class="postone">
+                            <img src="img/sunhyun-avatar.png" />
+                        </div>
+                        <div class="posttwo">
+                            <p id="authorname"><a href="#">Trương Khánh</a></p>
+                            <p>Dec 2, 2019  </p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h2 class="no-margin-top"><a id="title4" href="">BẠN LÀ TÍN ĐỒ "CƠM NHÀ" HAY CƠM QUÁN?</a></h2>
+                        <br />
+                        <p id="description">
+                            Có khi tôi vẫn ghé quán cũ, uống cốc nước cũ. Cũ đến mức cái menu trở nên thật xa xỉ. Nhưng sách tôi đọc thì chẳng bao giờ cũ. Nó chỉ giú...
+                        </p>
+                        <br />
+                        <ul id="footer-post">
+                            <li>100 Views</li>
+                            <li>6 comments</li>
+                            <li id="last-footer-post">190 <img src="img/heart-icon.png" /></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li id="showmore"><a href="pages/blog.html">Show more</a></li>
+    </ul>
+
+    <div class="abovefooter">
+        <div class="abovefooter1">
+            <img src="img/sunhyun-avatar.png" />
+        </div>
+        <div class="abovefooter2">
+            <img id="quote" src="img/quote2.png" style="width: 60px" />
+            <p>Don't be the same</p>
+            <p>Be better.</p>
+            <br />
+            <h6>Sunhuyn</h6>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+</body>
+</html>

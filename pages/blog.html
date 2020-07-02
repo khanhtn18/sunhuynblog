@@ -1,0 +1,336 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>BLOG | Sunhuyn</title>
+    <link rel="stylesheet" type="text/css" href="../css/blogstyle.css" />
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <div id="id01" class="modal">
+        <form class="modal-content animate" method="get">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="../img/signin1.png" alt="Avatar" class="avatar">
+            </div>
+            <div class="container1">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Type your username..." name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Type your password..." name="psw" required>
+
+                <button type="submit">Log in</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+            <div class="container1" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <div id="top-bar"></div>
+    <div id="top-color-splash"></div>
+
+    <div class="navigation">
+        <ul id="navbar">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="aboutme.html">ABOUT ME</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="" class="last-link">IMAGES</a></li>
+        </ul>
+        <img id="navblog" src="../img/blog.png" />
+        <ul id="logo-container">
+            <li id="logo-icon2"><a href="#"><img src="../img/instagram.png" /></a></li>
+            <li id="logo-icon1"><a href="#"><img src="../img/youtube.png" /></a></li>
+            <li id="logo-icon"><a href="#"><img src="../img/facebook.png" /></a></li>
+        </ul>
+    </div>
+    <div class="normal-wrapper">
+        <div class="navcate">
+            <ul id="leftnc">
+                <li><a href="blog.html">New</a></li>
+                <li><a href="blog.html">Bullet Journal</a></li>
+                <li><a href="blog.html">Do it better</a></li>
+                <li><a href="blog.html">Highlight</a></li>
+            </ul>
+            <ul id="rightnc">
+                <li id="logsign">
+                    <a onclick="document.getElementById('id01').style.display='block'">Log in / Sign Up</a>
+                </li>
+                <li>
+                    <a href=""><img id="search" src="../img/search-icon.png" /></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="normal-wrapper row">
+        <div class="column">
+            <div class="column-row-one">
+                <img id="imagepost-blog" src="../img/1.png" />
+            </div>
+            <div class="column-row-two">
+                <div class="info-author">
+                    <div class="postone">
+                        <img src="../img/sunhyun-avatar.png" />
+                    </div>
+                    <div class="posttwo">
+                        <p id="authorname"><a href="#">Trương Khánh</a></p>
+                        <p id="date">Dec 2, 2019  </p>
+                    </div>
+                </div>
+                <div class="content">
+                    <h2 class="titleblog"><a href="detail.html">LÂU KHÔNG VIẾT CÁI GÌ ĐÓ "TÌNH" NHỈ?</a></h2>
+                    <br />
+                </div>
+                <ul id="footer-post-blog">
+                    <li><hr /></li>
+                    <li ><img src="../img/view-icon.png" style="width: 15px; margin-bottom: 0px" /> 3.290 </li>
+                    <li><img src="../img/comment-icon.png" style="width: 15px; margin-bottom: 0px;" /> 6 </li>
+                    <li id="last-footer-post">190 <img src="../img/heart-icon.png" /></li>
+                </ul>
+            </div>
+        </div>
+        <div class="column">
+            <div class="column-row-one">
+                <img id="imagepost-blog" src="../img/2.png" />
+            </div>
+            <div class="column-row-two">
+                <div class="info-author">
+                    <div class="postone">
+                        <img src="../img/sunhyun-avatar.png" />
+                    </div>
+                    <div class="posttwo">
+                        <p id="authorname"><a href="#">Trương Khánh</a></p>
+                        <p id="date">Dec 2, 2019  </p>
+                    </div>
+                </div>
+                <div class="content">
+                    <h2 class="titleblog"><a href="detail2.html">ĐỌC 7 CUỐN SÁCH TRONG 7 NGÀY</a></h2>
+                    <br />
+                </div>
+                <ul id="footer-post-blog">
+                    <li><hr /></li>
+                    <li><img src="../img/view-icon.png" style="width: 15px; margin-bottom: 0px" /> 3.290 </li>
+                    <li><img src="../img/comment-icon.png" style="width: 15px; margin-bottom: 0px;" /> 6 </li>
+                    <li id="last-footer-post">190 <img src="../img/heart-icon.png" /></li>
+                </ul>
+            </div>
+        </div>
+        <div class="column">
+            <div class="column-row-one">
+                <img id="imagepost-blog" src="../img/3.png" />
+            </div>
+            <div class="column-row-two">
+                <div class="info-author">
+                    <div class="postone">
+                        <img src="../img/sunhyun-avatar.png" />
+                    </div>
+                    <div class="posttwo">
+                        <p id="authorname"><a href="#">Trương Khánh</a></p>
+                        <p id="date">Dec 2, 2019  </p>
+                    </div>
+                </div>
+                <div class="content">
+                    <h2 class="titleblog"><a href="detail3.html">CHUYỆN ĐỌC SÁCH CỦA CÁC BẠN TRẺ NGÀY NAY ...</a></h2>
+                    <br />
+                </div>
+                <ul id="footer-post-blog">
+                    <li><hr /></li>
+                    <li><img src="../img/view-icon.png" style="width: 15px; margin-bottom: 0px" /> 3.290 </li>
+                    <li><img src="../img/comment-icon.png" style="width: 15px; margin-bottom: 0px;" /> 6 </li>
+                    <li id="last-footer-post">190 <img src="../img/heart-icon.png" /></li>
+                </ul>
+            </div>
+        </div>
+        <div class="column">
+            <div class="column-row-one">
+                <img id="imagepost-blog" src="../img/4.1.png" />
+            </div>
+            <div class="column-row-two">
+                <div class="info-author">
+                    <div class="postone">
+                        <img src="../img/sunhyun-avatar.png" />
+                    </div>
+                    <div class="posttwo">
+                        <p id="authorname"><a href="#">Trương Khánh</a></p>
+                        <p id="date">Dec 2, 2019  </p>
+                    </div>
+                </div>
+                <div class="content">
+                    <h2 class="titleblog"><a href="">BẠN LÀ TÍN ĐỒ "CƠM NHÀ" HAY CƠM QUÁN?</a></h2>
+                    <br />
+                </div>
+                <ul id="footer-post-blog">
+                    <li><hr /></li>
+                    <li><img src="../img/view-icon.png" style="width: 15px; margin-bottom: 0px" /> 3.290 </li>
+                    <li><img src="../img/comment-icon.png" style="width: 15px; margin-bottom: 0px;" /> 6 </li>
+                    <li id="last-footer-post">190 <img src="../img/heart-icon.png" /></li>
+                </ul>
+            </div>
+        </div>
+        <div class="column">
+            <div class="column-row-one">
+                <img id="imagepost-blog" src="../img/5.png" />
+            </div>
+            <div class="column-row-two">
+                <div class="info-author">
+                    <div class="postone">
+                        <img src="../img/sunhyun-avatar.png" />
+                    </div>
+                    <div class="posttwo">
+                        <p id="authorname"><a href="#">Trương Khánh</a></p>
+                        <p id="date">Dec 2, 2019  </p>
+                    </div>
+                </div>
+                <div class="content">
+                    <h2 class="titleblog"><a href="">Vừa làm vừa nghỉ ngơi sao cho khoa học để cân bằng cuộc sống?</a></h2>
+                    <br />
+                </div>
+                <ul id="footer-post-blog">
+                    <li><hr /></li>
+                    <li><img src="../img/view-icon.png" style="width: 15px; margin-bottom: 0px" /> 3.290 </li>
+                    <li><img src="../img/comment-icon.png" style="width: 15px; margin-bottom: 0px;" /> 6 </li>
+                    <li id="last-footer-post">190 <img src="../img/heart-icon.png" /></li>
+                </ul>
+            </div>
+        </div>
+        <div class="column">
+            <div class="column-row-one">
+                <img id="imagepost-blog" src="../img/6.png" />
+            </div>
+            <div class="column-row-two">
+                <div class="info-author">
+                    <div class="postone">
+                        <img src="../img/sunhyun-avatar.png" />
+                    </div>
+                    <div class="posttwo">
+                        <p id="authorname"><a href="#">Trương Khánh</a></p>
+                        <p id="date">Dec 2, 2019  </p>
+                    </div>
+                </div>
+                <div class="content">
+                    <h2 class="titleblog"><a href="">Đã là một cô gái, đừng bao giờ quên yêu thương bản thân mình</a></h2>
+                    <br />
+                </div>
+                <ul id="footer-post-blog">
+                    <li><hr /></li>
+                    <li><img src="../img/view-icon.png" style="width: 15px; margin-bottom: 0px" /> 3.290 </li>
+                    <li><img src="../img/comment-icon.png" style="width: 15px; margin-bottom: 0px;" /> 6 </li>
+                    <li id="last-footer-post">190 <img src="../img/heart-icon.png" /></li>
+                </ul>
+            </div>
+        </div>
+        <div class="column">
+            <div class="column-row-one">
+                <img id="imagepost-blog" src="../img/7.png" />
+            </div>
+            <div class="column-row-two">
+                <div class="info-author">
+                    <div class="postone">
+                        <img src="../img/sunhyun-avatar.png" />
+                    </div>
+                    <div class="posttwo">
+                        <p id="authorname"><a href="#">Trương Khánh</a></p>
+                        <p id="date">Dec 2, 2019  </p>
+                    </div>
+                </div>
+                <div class="content">
+                    <h2 class="titleblog"><a href="">Đây là 10 thói quen giúp bạn thay đổi cuộc sống</a></h2>
+                    <br />
+                </div>
+                <ul id="footer-post-blog">
+                    <li><hr /></li>
+                    <li><img src="../img/view-icon.png" style="width: 15px; margin-bottom: 0px" /> 3.290 </li>
+                    <li><img src="../img/comment-icon.png" style="width: 15px; margin-bottom: 0px;" /> 6 </li>
+                    <li id="last-footer-post">190 <img src="../img/heart-icon.png" /></li>
+                </ul>
+            </div>
+        </div>
+        <div class="column">
+            <div class="column-row-one">
+                <img id="imagepost-blog" src="../img/8.png" />
+            </div>
+            <div class="column-row-two">
+                <div class="info-author">
+                    <div class="postone">
+                        <img src="../img/sunhyun-avatar.png" />
+                    </div>
+                    <div class="posttwo">
+                        <p id="authorname"><a href="#">Trương Khánh</a></p>
+                        <p id="date">Dec 2, 2019  </p>
+                    </div>
+                </div>
+                <div class="content">
+                    <h2 class="titleblog"><a href="">NHỮNG CUỐN SÁCH HAY NHẤT THÁNG 1+2</a></h2>
+                    <br />
+                </div>
+                <ul id="footer-post-blog">
+                    <li><hr /></li>
+                    <li><img src="../img/view-icon.png" style="width: 15px; margin-bottom: 0px" /> 3.290 </li>
+                    <li><img src="../img/comment-icon.png" style="width: 15px; margin-bottom: 0px;" /> 6 </li>
+                    <li id="last-footer-post">190 <img src="../img/heart-icon.png" /></li>
+                </ul>
+            </div>
+        </div>
+        <div class="column">
+            <div class="column-row-one">
+                <img id="imagepost-blog" src="../img/9.png" />
+            </div>
+            <div class="column-row-two">
+                <div class="info-author">
+                    <div class="postone">
+                        <img src="../img/sunhyun-avatar.png" />
+                    </div>
+                    <div class="posttwo">
+                        <p id="authorname"><a href="#">Trương Khánh</a></p>
+                        <p id="date">Dec 2, 2019  </p>
+                    </div>
+                </div>
+                <div class="content">
+                    <h2 class="titleblog"><a href="">TẠI SAO MÌNH SỬ DỤNG SỔ TAY ĐỂ LÊN KẾ HOẠCH? Thay vì  ...</a></h2>
+                    <br />
+                </div>
+                <ul id="footer-post-blog">
+                    <li><hr /></li>
+                    <li><img src="../img/view-icon.png" style="width: 15px; margin-bottom: 0px" /> 3.290 </li>
+                    <li><img src="../img/comment-icon.png" style="width: 15px; margin-bottom: 0px;" /> 6 </li>
+                    <li id="last-footer-post">190 <img src="../img/heart-icon.png" /></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
